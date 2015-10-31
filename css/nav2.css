@@ -1,0 +1,120 @@
+nav {background:#FFF;float:left;}
+nav ul {text-align:center;}
+/*icon*/
+nav ul li {float:left;display:inline;} 
+nav ul li:hover {background:#E6E6E6;}
+/*main and span*/
+nav ul li a {display:block;height:40px;width:40px;color:#444;}
+nav ul li ul {position:absolute;width:110px;background:#FFF;}
+nav ul li ul li {width:110px;}
+nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700);
+
+.mobileNav {
+    color: #FFFFFF;
+    font-family: 'Cuprum',Georgia,"Times New Roman",Times,Serif;
+    font-size: 16px;
+    height: 57px;
+}
+.mobileNav ul {margin: 0; padding: 0; }
+.mobileNav ul li i { position: relative; margin: -10px 0 0 -10px; top: 50%; left: 50%; width: 20px; height: 20px;}
+.mobileNav li { float: left; display: block; width: 40px; height: 40px; border-right: 1px solid #ffffff; cursor: pointer; background-color: #03B2EC;}
+.mobileNav li:last-child{ border-right:none;}
+.mobileNav li main {font-weight: 700; margin-top: -18px; }
+.mobileNav li span { position: relative; float: left; font-size: 12px; color: #f5f7f8; }
+
+.mobileNav li, .mobileNav li i, .mobileNav li main, .mobileNav li span {
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+
+.mobileNav li:hover main { 
+	margin-left: 10px; 
+   -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.mobileNav li:hover span { 
+	margin-left: 25px; 
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+/* COLOR MANAGEMENT */
+
+/*.ccblue .mainmenu { background: none repeat scroll 0 0 #03B2EC;}*/
+.ccblue .mobileNav li:hover { background: #044c64; }
+.ccblue .mobileNav li:hover i {color: #ffffff;}
+.ccblue .mobileNav li i { color: #044c64; }
+.ccblue .mobileNav li:hover i {color: #ffffff;}
+
+.ccred .mobileNav { background: none repeat scroll 0 0 #f00940;}
+.ccred .mobileNav li:hover { background: #a30328; }
+.ccred .mobileNav li i { color: #a30328; }
+.ccred .mobileNav li:hover i {color: #ffffff;}
+
+.ccgreen .mobileNav { background: none repeat scroll 0 0 #98c304;}
+.ccgreen .mobileNav li:hover { background: #5e7902; }
+.ccgreen .mobileNav li i { color: #5e7902; }
+.ccgreen .mobileNav li:hover i {color: #ffffff;}
+
+.cssbron .mobileNav { background: none repeat scroll 0 0 #af4004;}
+.cssbron .mobileNav li:hover { background: #7c2e03; }
+.cssbron .mobileNav li i { color: #7c2e03; }
+.cssbron .mobileNav li:hover i {color: #ffffff;}
+
+section{ float:left; width:auto; margin-bottom:40px;}
+
+.credit {
+float: left;
+margin: 25px;
+text-align: center;
+}
+.credit em{
+margin-right:5px;
+}
+.credit a {
+color: #00B7EA;
+font-weight: bold;
+text-decoration: none;
+}
+.credit a:hover {
+color: #086cc1;
+}
+
+
+@media (max-width: 900px) {
+    .mobileNav li span {
+        display: none;
+    }
+    .mobileNav li {
+        width: 5px;
+        height: auto;
+    }
+    .mobileNav li i { 
+        margin: 0 0 0 -25px;
+        width: 21.337px;
+        /*left: 50%;*/
+/*        position: absolute;*/
+/*        float: left;
+        display: block;
+*/    }
+    .mobileNav li main {
+        display: none;
+    }
+.ccblue {
+    margin: 0px 0 0 -232.5px;
+    width: 465px;
+    left: 50%;
+    position: absolute;
+}
+}

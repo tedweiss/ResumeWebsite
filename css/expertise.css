@@ -1,0 +1,47 @@
+.meet5 {
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 0.75);
+	margin: 90px 0 40px -450px;
+	width: 900px;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+}
+
+.thumbnail {
+	/*height: 280px !important;*/
+	width: 200px;
+	text-align: center;
+	float: left;
+}
+
+.btn-droppable {
+	width: 180px;
+	height: 30px;
+	padding-left: 4px;
+	margin: 0 auto;
+}
+
+.btn-draggable {
+	width: 160px;
+}
+
+.emage {
+	height: 110px;
+	margin: 0 auto;
+}
+
+.form-inline {
+	width: 820px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn-success {
+	margin: 15px 0;
+}
+
+.navbar-inner {
+	width: 858px;
+	background: none;
+}

@@ -1,0 +1,14 @@
+<section ng-controller="rpsCtrl as ctrl" id="container" class="meet2">
+	<div class="centered">
+		<div class="blocks">
+			<img ng-init="imgsrc1='../images/rpsimages/rock.png'" ng-mouseover="imgsrc1='../images/rpsimages/rock-blue.png'" ng-mouseout="imgsrc1='../images/rpsimages/rock.png'" ng-src="{{imgsrc1}}" ng-click="ctrl.chooseRock()">
+		</div>
+		<div class="blocks">
+			<img ng-init="imgsrc2='../images/rpsimages/paper.png'" ng-mouseover="imgsrc2='../images/rpsimages/paper-blue.png'" ng-mouseout="imgsrc2='../images/rpsimages/paper.png'" ng-src="{{imgsrc2}}" ng-click="ctrl.choosePaper()">
+		</div>
+		<div class="blocks">
+			<img ng-init="imgsrc3='../images/rpsimages/scissors.png'" ng-mouseover="imgsrc3='../images/rpsimages/scissors-blue.png'" ng-mouseout="imgsrc3='../images/rpsimages/scissors.png'" ng-src="{{imgsrc3}}" ng-click="ctrl.chooseScissors()">
+		</div>
+		<div class="bx" ng-bind="rpsResult"></div>
+	</div>
+</section>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app="ResumeApp">
+<head>
+		<link href='http://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://cdnjs.com/#jquery-backstretch"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+	<!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <!-- // <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script> -->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/ui-lightness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="css/nav.css"/>
+		<link type="text/css" rel="stylesheet" href="css/aboutMe.css"/>
+		<link type="text/css" rel="stylesheet" href="css/expertise.css"/>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<title>Theodore Weiss Resume</title>
+	</head>
+<body>
+	<script>
+	  $.backstretch("images/IMG_0002.jpg");
+	</script>
+
+	<header class="ccheader">
+		<h1>Theodore Weiss</h1>	
+				
+	</header>
+	<div class="wrapper">
+    	
+		<section class="ccblue">	
+			<div class="mainmenu">
+			  <ul>
+				<li><a href="#/"><i class="icon-home icon-large"></i>&nbsp;<main>Home</main><span>Detroit</span></li>
+				<li><a href="#/aboutMe"><i class="icon-user icon-large"></i>&nbsp;<main>About Me</main><span>who I am</span></a></li>
+				<li><a href="#/expertise"><i class="icon-star icon-large"></i>&nbsp;<main>Expertise</main><span>what I know</span></a></li>
+				<li><a href="#/portfolio"><i class="icon-briefcase icon-large"></i>&nbsp;<main>Portofolio</main><span>my work</span></li>
+				<li><a href="#/experience"><i class="icon-file icon-large"></i>&nbsp;<main>Experience</main><span>what I've done</span></a></li>
+				<li><a href="#/education"><i class="icon-book icon-large"></i>&nbsp;<main>Education</main><span>where I've studied</span></a></li>
+				<li><a href="#/contact"><i class="icon-comment icon-large"></i>&nbsp;<main>Contact</main><span>how to reach</span></a></li>
+			  </ul>
+			</div>
+		</section>	
+
+		<ng-view></ng-view>
+
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/controllers/AboutMeCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ContactCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/EducationCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ExperienceCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ExpertiseCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/HymtCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ImmLutheranCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/PortfolioCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/rpsCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/rpsServ.js"></script>
+	<script type="text/javascript" src="js/controllers/WhoopsCtrl.js"></script>
+    <script type="text/javascript"src="js/angular-dragdrop.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<section ng-controller="AboutMeCtrl" class="meet3">
+	<form name="aboutMeForm" class="myForm" ng-hide="aboutMeForm.$valid && submitted" required novalidate>
+		
+		<h2>About Me</h2>
+		<h3>Fill out the form and click "Find out about Ted."</h3>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.firstName.$invalid]">
+			<label for="first-name">Your first name: </label>
+			<input type="text" name="firstName" placeholder="Your first name" ng-model="firstName" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.firstName.$error.required">Required</span>
+		</div>
+
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.posAdj.$invalid]">
+			<label for="pos-adj">Positive adjective: </label>
+			<p><input type="radio" name="posAdj" value="awesome" ng-model="posAdj" required> Awesome
+			<input type="radio" name="posAdj" value="great" ng-model="posAdj" required> Great</p>
+			<p><input type="radio" name="posAdj" value="spectacular" ng-model="posAdj" required> Spectacular 
+			<input type="radio" name="posAdj" value="wonderful" ng-model="posAdj" required> Wonderful</p>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.posAdj.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.city.$invalid]">
+			<label for="city">City name: </label>
+			<input type="text" name="city" placeholder="City name" ng-model="city" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.city.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.selectStates.$invalid]">
+			<label for="selectStates">Select the order of the states</label>
+			<select name="selectStates" ng-model="selectStates" required>
+				<option selected disabled value=''>Select the order of the states</option>
+				<option value="Michigan, Nevada, and California">Michigan, Nevada, and California</option> 
+				<option value="California, Michigan, and Nevada">California, Michigan, and Nevada</option>
+				<option value="Nevada, California, and Michigan">Nevada, California, and Michigan</option>
+			</select>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.selectStates.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.hockeyTeam.$invalid]">
+			<label for="hockey-team">Hockey team (other than the Red Wings): </label>
+			<input type="text" name="hockeyTeam" placeholder="Hockey team" ng-model="hockeyTeam" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.hockeyTeam.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.baseballTeam.$invalid]">
+			<label for="baseball-team">Baseball team (other than the Tigers): </label>
+			<input type="text" name="baseballTeam" placeholder="Baseball team" ng-model="baseballTeam" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.baseballTeam.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.sport.$invalid]">
+			<label for="sport">Sport: </label>
+			<input type="text" name="sport" placeholder="sport" ng-model="sport" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.sport.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.favMovie.$invalid]">
+			<label for="fav-movie">Favorite movie: </label>
+			<input type="text" name="favMovie" placeholder="Favorite movie" ng-model="favMovie" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.favMovie.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.favMovie.$invalid]">
+			<label for="hobby">Hobby: </label>
+			<input type="text" name="hobby" placeholder="Hobby" ng-model="hobby" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.hobby.$error.required">Required</span>
+		</div>
+		
+		<div class="form-div" ng-class="{true: 'error'}[aboutMeForm.checkbox.$valid && aboutMeForm.candy.$invalid]">
+			<label for="candy">Favorite candy: </label>
+			<input type="text" name="candy" placeholder="Favorite candy" ng-model="candy" required>
+			<span ng-show="aboutMeForm.checkbox.$valid && aboutMeForm.candy.$error.required">Required</span>
+		</div>
+		<section>
+			<p class="submitDivs" ng-class="{true: 'error'}[submitted && aboutMeForm.checkbox.$invalid]">
+				<input type="checkbox" name="checkbox" ng-model="checked" required>I have completed the form!
+				<span ng-show="submitted && aboutMeForm.checkbox.$error.required">Required</span>
+			</p>
+			
+			<p class="submitDivs">
+				<button class="button" type="submit" ng-click="submitted=true">Find out more about Ted</button>
+			</p>
+		</section>
+	</form>
+
+	<section class="meet3 meet4" ng-show="aboutMeForm.$valid && submitted">
+		<p>Hello <span>{{firstName}}</span>,</p>
+		
+		<p>I’m Ted. I'm a front end developer. I'm looking to become an <span>{{posAdj}}</span>  entry level developer in metro-Detroit but also willing to consider working in <span>{{city}}</span>. Having been a teacher, I know the importance of learning and collaboration. I'm looking for a company with a mentorship program and a desire to improve the image of Detroit. I want to make functional and enjoyable online experiences for the customers.</p>
+		
+		<p>I have been a middle school teacher for 9 years in <span>{{selectStates}}</span>. I've taught a little of everything, but focused on English, math, and computers. I taught students basic HTML. Their excitement for creating webpages, fueled my own passion for the web and improving it for everyone.</p>
+		
+		<p>I enjoy watching the Red Wings defeat any team they play but especially against <span>{{hockeyTeam}}</span>. I also enjoy watching  the Tigers take on <span>{{baseballTeam}}</span>.  I also enjoy watching the Lions play football, but maybe they would be better at <span>{{sport}}</span>.  I also enjoy movies.  Some of my favorites are the Lego Movie, Harry Potter, and the Godfather.  I’d be excited to see <span>{{favMovie}}</span>.  When I’m not developing websites, I have fun taking  photographs and brewing my own beer.  I’d be interested in learning more about <span>{{hobby}}</span>.  Did I mention that eating ice cream and <span>{{candy}}</span> while coding is awesome!</p>
+	</section>
+
+	<a href="#/home" ng-show="aboutMeForm.$valid && submitted">
+		<button class="button" type="submit">Return to home page</button>
+	</a>
+</section>

@@ -1,0 +1,39 @@
+.colorbox-container body {
+	font:12px/1.2 Verdana, sans-serif;
+	padding:0 10px;
+}
+
+.colorbox-container a:link, a:visited {
+	text-decoration:none;
+	color: black;
+}
+
+.colorbox-container h2 {
+	font-size:20px;
+	margin:15px 0;
+	background-color: #84BBD0;
+}
+
+.colorbox-container img {
+	width: 250px;
+	height: 150px;
+}
+
+.colorbox-container section p {
+	display: inline-block;
+	width: 270px;
+	margin: 3px auto;
+	position: relative;
+}
+
+.colorbox-container a span {
+	display: block;
+	text-align: center;
+	margin-top: 3px;
+}
+
+.colorbox-container section {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
