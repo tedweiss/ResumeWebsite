@@ -1,13 +1,13 @@
 app.controller('ExpertiseCtrl', function($scope, $timeout) {
   $scope.images = [
-  {'thumb': 'HTML_logo.png'},
+  {'thumb': 'HTML-logo.png'},
   {'thumb': 'css3-logo.png'},
   {'thumb': 'JAVAScript-logo.png'},
   {'thumb': 'angular-logo.png'},
   {'thumb': 'jquerylogo320.png'},
-  {'thumb': 'agile_icon.png'},
-  {'thumb': 'Adobe_Photoshop_CS6_icon.png'},
-  {'thumb': 'Adobe_premiere_logo.png'}]
+  {'thumb': 'agile-icon.png'},
+  {'thumb': 'Adobe-Photoshop-CS6-icon.png'},
+  {'thumb': 'Adobe-premiere-logo.png'}]
   $scope.list1 = [];
   angular.forEach($scope.images, function(val, key) {
     $scope.list1.push({});
